@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+</head>
+<body>
+<h1>新闻中心</h1>
+<ul>
+    {% for foo in result_data %}
+        <li>
+            <br/>
+            {{ foo.news_title }} 时间： {{ foo.post_time }}
+        </li>
+    {% endfor %}
+
+</ul>
+</body>
+</html>

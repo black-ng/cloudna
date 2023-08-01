@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tpl</title>
+</head>
+<body>
+<div>
+    {{ n1 }}
+</div>
+
+<div>
+    {% for listk in n2 %}
+        <div>{{ listk }}</div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<ul>
+    {% for k,v in n3.items %}
+        <li>{{ k }} : {{ v }}</li>
+    {% endfor %}
+</ul>
+
+<hr>
+<ul>
+    {% for n4key in n4 %}
+        {% for n4k,n4v in n4key.items %}
+            <div>
+                {{ n4k }} : {{ n4v }}
+            </div>
+        {% endfor %}
+        <div>----</div>
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>
